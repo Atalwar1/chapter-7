@@ -14,8 +14,10 @@ output "registry_hostname" {
 
 output "registry_un" {
   value = azurerm_container_registry.container_registry.admin_username
+   sensitive = true
 }
 
 output "registry_pw" {
   value = azurerm_container_registry.container_registry.admin_password
+  sensitive = true
 }
